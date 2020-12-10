@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>A Photo Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  <script src="smoothscroll.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+  <div id="cover" >
+
+    <h2 id="loadT">
+      <i>
+            This is an ongoing  collaborative photo book consisting of found images, vernacular photography and various artifacts from peoples phones and computers. <br> <br> Vol. II <br> <br>
+      </i>
+      A good photo book is dependent on an interesting sequence of images. Below you get to see the current sequence and are invited to respond to that with your own contribution.
+      <br><br>
+      How your contribution fits in with the rest of the book is all up to you, wether it’s through contrast or connection, color or content or simply just because the image is interesting in itself.
+      <br><br>
+      Vol. II is complete at 100 images.
+      <br><br>
+
+      All contributions are welcome. Let’s make an interesting photo book together! <br> <br>
+<span id="textLink" onclick="scroller" > <u>Scroll to Book</u></span>
+<br><br>
+</h2>
+
+  </div>
+
+
+
+
+<div id="flexContainer">
+
+
+  <div id="imageContainer">
+
+
+
+
+  </div>
+
+  <div id="IXcontainer">
+
+
+    <p> Pick a photo </p>
+
+    <img id="image" >
+
+    <input type="file" name="" value="" id="fileButton" accept="image/*">
+    <input type="field" name="" placeholder="Title (Optional)" id="inp">
+    <p id="checkText"><input type="checkbox" name="" value="" id="checkBox"> I own the rights to this picture and allow it to be used on the internet and in a printed publication.</p>
+    <button type="button" name="button" id="uploadButton" onclick="upload()" disabled> Upload</button>
+    <p id="text"></p>
+
+
+
+
+
+  </div>
+  <div id="rightPageCont">
+
+  </div>
+
+
+  <div id="leftBar" onclick="goLeft()"></div>
+  <div id="rightBar" onclick="goRight()"></div>
+  </div>
+
+  <h3> <i> Click the edges of the pages to browse the book </i> </h3>
+  <h2 id="contact" style="width:100%; pointer-events: auto; margin-top: 0; margin-bottom: 2%; margin-left: 0;"> Contact:&nbsp;&nbsp;  <a href="mailto:axel@egenaes.no">Mail</a> &nbsp;&nbsp; <a href="https://instagram.com/berg.graf" target="_blank">Instagram</a></h2>
+
+
+
+
+  <script type="text/javascript" src="script.js">
+</script>
+
+
+</body>
+</html>
